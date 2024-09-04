@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <ul>
+            <button onclick=closesidebar() class="close-btn" >close</button> 
+            <li><a href="#">home</a></li>
+            <li><a href="#">services</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">about</a></li>
+        </ul>
+    </nav>
+    <header>
+    <nav class="navbar">
+        <a href="#">home</a> 
+        <a href="#">services</a> 
+        <a href="#">contact</a> 
+        <a href="#">about</a>    
+    </nav> 
+    <button onclick=showsidebar() class="menu-btn">menu</button>   
+    </header>
+    <aside>
+        <ul>
+            <li><a href="#">blog1</a></li> 
+            <li><a href="#">blog2</a></li> 
+            <li><a href="#">blog3</a></li> 
+            <li><a href="#">blog4</a></li> 
+        </ul>
+    </aside>
+    <main>
+        <article>
+            <h1>blog1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat dolores illo numquam, velit voluptatum magnam laboriosam animi beatae maiores quae praesentium placeat. Iure reprehenderit ex earum molestiae at provident architecto!</p>
+        </article>
+        <article>
+            <h1>blog2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat dolores illo numquam, velit voluptatum magnam laboriosam animi beatae maiores quae praesentium placeat. Iure reprehenderit ex earum molestiae at provident architecto!</p>
+        </article>
+        <article>
+            <h1>blog3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat dolores illo numquam, velit voluptatum magnam laboriosam animi beatae maiores quae praesentium placeat. Iure reprehenderit ex earum molestiae at provident architecto!</p>
+        </article>
+        <article>
+            <h1>blog4</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat dolores illo numquam, velit voluptatum magnam laboriosam animi beatae maiores quae praesentium placeat. Iure reprehenderit ex earum molestiae at provident architecto!</p>
+        </article>
+    </main>
+    <footer>
+        @copyrights - reserved madhanz
+    </footer>
+    <script>
+        function showsidebar(){
+            const sidebar=document.querySelector('.sidebar')
+            sidebar.style.display ='block'
+       }
+       function closesidebar(){
+            const sidebar=document.querySelector('.sidebar')
+            sidebar.style.display ='none'
+       }
+    </script>
+</body>
+</html>
