@@ -50,7 +50,7 @@ footer {
 .menu-btn{
 display: none;
 }
-@media (min-width: 400px) and (max-width: 786px){
+@media (min-width: 350px) and (max-width: 786px){
     aside{
         display: block;
         height: 120px;
